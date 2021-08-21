@@ -1,0 +1,174 @@
+:root {
+  --main-text-color: #212121;
+  --secondary-text-color: #757575;
+  --third-text-color: #fff;
+  --accent-color: #2196f3;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--main-text-color);
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* ---------------------------HEADER---------------------------*/
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #000000;
+  text-decoration: none;
+}
+.part-logo {
+  color: var(--accent-color);
+}
+.navigation {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.navigation-link {
+  color: var(--main-text-color);
+}
+.navigation-link:hover,
+.navigation-link:focus {
+  color: var(--accent-color);
+}
+.active {
+  color: var(--accent-color);
+}
+.contact-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contact-link {
+  color: var(--secondary-text-color);
+}
+.contact-item:hover,
+.contact-item:focus {
+  color: var(--accent-color);
+}
+
+/*----------------------------HERO--------------------------*/
+.title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--third-text-color);
+}
+.btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--third-text-color);
+  background-color: var(--accent-color);
+  border: none;
+  cursor: pointer;
+}
+.btn:hover,
+.btn:focus {
+  background: #188ce8;
+}
+
+/*-----------------------SECTION ADVANTAGES----------------------*/
+.advantages-title-hidden {
+  visibility: hidden;
+}
+.advantages {
+  font-size: 14px;
+}
+.advantages-title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.advantages-text {
+  line-height: 1.71;
+  color: var(--secondary-text-color);
+}
+
+/*-----------------------SECTION OUR WORK END TEAM-------------------------*/
+.our-work-title,
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.team {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team-name {
+  font-weight: 500;
+}
+.team-text {
+  font-weight: normal;
+  color: var(--secondary-text-color);
+}
+
+/*--------------------FOOTER---------------------------*/
+.adress {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.adress-link {
+  color: var(--third-text-color);
+}
+.adress-mail,
+.adress-tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+/*--------------------PORTFOLIO------------------------*/
+.portfolio-title {
+  visibility: hidden;
+}
+.filter-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border: none;
+  cursor: pointer;
+}
+.filter-btn:focus,
+.filter-btn:hover {
+  background-color: var(--accent-color);
+  color: var(--third-text-color);
+}
+.gallery-link {
+  color: var(--main-text-color);
+}
+.gallery-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.gallery-text {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--secondary-text-color);
+}
