@@ -26,16 +26,17 @@ ul {
 .link {
   text-decoration: none;
 }
-
-/* ---------------------------HEADER---------------------------*/
 .container {
-  display: flex;
   width: 1200px;
-  border-bottom: 1px solid #ececec;
-  background-color: var(--third-text-color);
   padding-left: 15px;
   padding-right: 15px;
   align-items: center;
+}
+/* ---------------------------HEADER---------------------------*/
+.header {
+  display: flex;
+  border-bottom: 1px solid #ececec;
+  background-color: var(--third-text-color);
 }
 .logo {
   font-family: Raleway;
@@ -44,6 +45,8 @@ ul {
   line-height: 1.19;
   color: #000000;
   text-decoration: none;
+  padding-top: 25px;
+  padding-bottom: 24px;
 }
 .part-logo {
   color: var(--accent-color);
