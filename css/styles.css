@@ -28,9 +28,14 @@ ul {
 }
 .container {
   width: 1200px;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  align-items: center;
+  border-color: #e5e5e5;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 /* ---------------------------HEADER---------------------------*/
 .header {
@@ -47,22 +52,21 @@ ul {
   text-decoration: none;
   padding-top: 25px;
   padding-bottom: 24px;
+  margin-right: 93px;
 }
 .part-logo {
   color: var(--accent-color);
 }
 .navigation {
   display: flex;
-  margin-left: 93px;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.navigation-item:not(:first-child) {
-  margin-left: 50px;
+.navigation-item:not(:last-child) {
+  margin-right: 50px;
 }
 .navigation-link {
   display: block;
@@ -83,13 +87,14 @@ ul {
   margin-left: auto;
 }
 .contact-item {
-  margin-left: 50px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
+.contact-item:not(:last-child) {
+  margin-right: 50px;
+}
 .contact-link {
   display: block;
   padding: 32px 0;
@@ -102,7 +107,18 @@ ul {
 }
 
 /*----------------------------HERO--------------------------*/
+.section-hero {
+  background-color: #2f303a;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
 .title {
+  padding-top: 200px;
+  padding-left: 252px;
+  padding-right: 252px;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -112,6 +128,8 @@ ul {
   color: var(--third-text-color);
 }
 .btn {
+  width: 200px;
+  height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -120,7 +138,8 @@ ul {
   letter-spacing: 0.06em;
   color: var(--third-text-color);
   background-color: var(--accent-color);
-  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   cursor: pointer;
 }
 .btn:hover,
@@ -130,17 +149,31 @@ ul {
 
 /*-----------------------SECTION ADVANTAGES----------------------*/
 .advantages-title-hidden {
-  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 .advantages {
+  display: flex;
   font-size: 14px;
 }
+.advantages-item:not(:last-child) {
+  margin-right: 30px;
+}
 .advantages-title {
+  font-size: 14px;
+  margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
 }
 .advantages-text {
+  width: 270px;
   line-height: 1.71;
   color: var(--secondary-text-color);
 }
@@ -148,18 +181,54 @@ ul {
 /*-----------------------SECTION OUR WORK END TEAM-------------------------*/
 .our-work-title,
 .team-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
+.section-our-work {
+  padding-top: 0;
+}
+.our-work {
+  display: flex;
+}
+.our-work-image {
+  display: block;
+}
+.our-work-item:not(:last-child) {
+  margin-right: 30px;
+}
+.section-background {
+  background-color: #f5f4f4;
+}
+
 .team {
+  display: flex;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+.team-image {
+  display: block;
+}
+
+.team-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team-name {
   font-weight: 500;
+  margin-bottom: 10px;
 }
 .team-text {
   font-weight: normal;
@@ -167,10 +236,29 @@ ul {
 }
 
 /*--------------------FOOTER---------------------------*/
+.section-footer {
+  background-color: #2f303a;
+}
+.logo-footer {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  padding-top: 60px;
+  margin-bottom: 20px;
+  margin-right: auto;
+}
 .adress {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+  padding-bottom: 60px;
+}
+.adress-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .adress-link {
   color: var(--third-text-color);
@@ -181,7 +269,14 @@ ul {
 }
 /*--------------------PORTFOLIO------------------------*/
 .portfolio-title {
-  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 .filter-btn {
   font-weight: 500;
