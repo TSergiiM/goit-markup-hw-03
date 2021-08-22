@@ -3,6 +3,7 @@
   --secondary-text-color: #757575;
   --third-text-color: #fff;
   --accent-color: #2196f3;
+  --margin-card: 30px;
 }
 
 body {
@@ -220,7 +221,7 @@ ul {
 .team-description {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #fff;
+  background-color: var(--third-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -244,7 +245,7 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: #000000;
+  color: var(--third-text-color);
   text-decoration: none;
   display: block;
   padding-top: 60px;
@@ -278,28 +279,68 @@ ul {
   border: 0;
   clip: rect(0 0 0 0);
 }
+.filter {
+  display: flex;
+  justify-content: center;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
 .filter-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 6px 22px;
+  margin-bottom: 50px;
   border: none;
   cursor: pointer;
 }
 .filter-btn:focus,
 .filter-btn:hover {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
   background-color: var(--accent-color);
   color: var(--third-text-color);
 }
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-right: calc(-1 * var(--margin-card));
+  margin-bottom: calc(-1 * var(--margin-card));
+}
+.gallery-item {
+  flex-basis: calc(100% / 3 - var(--margin-card));
+  margin-right: var(--margin-card);
+  margin-bottom: var(--margin-card);
+}
 .gallery-link {
+  display: block;
   color: var(--main-text-color);
+}
+.gallery-image {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+.gallery-description {
+  padding: 20px 24px;
+  border: 1px solid #eee;
+  background-color: var(--third-text-color);
 }
 .gallery-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 .gallery-text {
   font-size: 16px;
